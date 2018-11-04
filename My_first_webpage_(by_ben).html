@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+    <body style='background-color:yellow'>
+      <h1 style='color:darkred'>This is my first website!</h1>
+      <h3 style='color:blue'>By ben</h3>
+      <p>Here are some options:</p>
+      <strong>A</strong>
+      <br>
+      <strong>B</strong>
+      <br>
+      <strong>C</strong>
+      <br>
+        <button onclick="setbg('red')">Change background color to red</button>
+        <button onclick="setbg('orange')">Change background color to orange</button>
+        <button onclick="setbg('yellow')">Change background color to yellow</button>
+        <button onclick="setbg('green')">Change background color to green</button>
+        <button onclick="setbg('blue')">Change background color to blue</button>
+        <button onclick="setbg('purple')">Change background color to purple</button>
+        <button onclick="setbg('white')">Change background color to white</button>
+        <button onclick="setbg('black')">Change background color to black</button>
+      <br>
+      <strong>D</strong>
+      <br>
+      <strong>E</strong>
+      <br>
+      <strong>F</strong>
+      <br>
+      <strong>G</strong>
+      <br>
+        <button onclick="window.location.href='First_website_games.html'">Games</button>
+      <br>
+      <strong>H</strong>
+      <br>
+        <button onclick="window.location.href='Have_a_conversation.html'">Have a conversation</button>
+      <br>
+      <strong>I</strong>
+      <br>
+      <strong>J</strong>
+      <br>
+      <strong>K</strong>
+      <br>
+      <strong>L</strong>
+      <br>
+      <strong>M</strong>
+      <br>
+        <button onclick="MathQuiz()">Math Quiz</button>
+      <br>
+      <strong>N</strong>
+      <br>
+      <strong>O</strong>
+      <br>
+      <strong>P</strong>
+      <br>
+        <button onclick="window.location.href='Pictures_of_dogs.html'">Pictures and videos of dogs</button>
+        <button onclick="window.location.href='Pictures_of_cats.html'">Pictures and videos of cats</button>
+      <br>
+      <strong>Q</strong>
+      <br>
+      <strong>R</strong>
+      <br>
+      <strong>S</strong>
+      <br>
+      <strong>T</strong>
+      <br>
+        <button onclick="Tellajoke()">Tell me a joke</button>
+      <br>
+      <strong>U</strong>
+      <br>
+      <strong>V</strong>
+      <br>
+      <strong>W</strong>
+      <br>
+      <strong>X</strong>
+      <br>
+      <strong>Y</strong>
+      <br>
+      <strong>Z</strong>
+      <br>
+        <script>
+          function setbg(col){
+            document.body.style.backgroundColor=col;
+          }
+          function MathQuiz(){
+            function quizask(question,correct){
+              const answer=prompt(question);
+              if(answer==correct)alert("Correct!");
+              else if(answer > correct) {alert("Incorrect, too much.")}
+              else if(answer < correct) {alert("Incorrect, too little")}
+              else alert("You're suppose to type a number.")
+            }
+            function youdidit(question,correct){
+              const answer=prompt(question);
+              if(answer==correct)alert("Wow, good job, you passed the test!");
+              else alert("Don't worry, you can try again.");
+            }
+            quizask("What is 2+2?",4);
+            quizask("What is 4+4?",8);
+            quizask("What is 7+7?",14);
+            quizask("What is 12+12?",24);
+            quizask("What is 25+25?",50);
+            quizask("What is 23+23?",46);
+            quizask("What is 22+43?",65);
+            quizask("What is 42+74?",116);
+            quizask("What is 3x4?",12);
+            quizask("What is 10x10?",100);
+            quizask("What is 5x5?",25);
+            quizask("What is 6x6?",36);
+            quizask("What is 9x9?",81);
+            quizask("What is 8x7?",56);
+            quizask("What is 12x12?",144);
+            quizask("What is 8-4?",4);
+            quizask("What is 12-5?",7);
+            quizask("What is 18-7?",11);
+            quizask("What is 32-15?",17);
+            quizask("What is 1/2 of 10?",5);
+            quizask("What is 1/3 of 9?",3);
+            quizask("What is 1/4 of 16?",4);
+            quizask("What is 1/5 of 35?",7);
+            quizask("What is 1/4 of 116?",29);
+            youdidit("Did you answer all those correctly?","yes");
+          }
+          function Tellajoke(){
+            var answer=prompt("a,b,c,or d?")
+            if(answer=="a")jokea()
+            else if(answer=="b")jokeb()
+            else if(answer=="c")jokec()
+            else if(answer=="d")joked()
+            else alert("Sorry, I don't understand.")
+          }
+          function jokea(){
+            var answer=prompt("Knock knock")
+            if(answer=="Hello?")alert("Hi!")
+            else jokea2()
+            function jokea2(){
+              var answer=prompt("Alaska")
+              if(answer=="Hello?")alert("Hi!")
+              else alert("Alaska one more time to open the door!")
+            }
+          }
+          function jokeb(){
+            var answer=prompt("Why did the robot cross the road?")
+            if(answer=="Hello?")alert("Hi!")
+            else jokeb2()
+            function jokeb2(){
+              alert("It was progamed by the chicken!")
+            }
+          }
+          function jokec(){
+            var answer=prompt("Knock knock")
+            if(answer=="Hello?")alert("Hi!")
+            else jokea2()
+            
+            function jokea2(){
+              var answer=prompt("Gorilla")
+              if(answer=="Hello?")alert("Hi!")
+              else alert("Gorilla me a cheese burger please!")
+            }
+          }
+          function joked(){
+            var answer=prompt("Knock knock")
+            if(answer=="Hello?")alert("Hi!")
+            else jokea2()
+            
+            function jokea2(){
+              var answer=prompt("ben")
+              if(answer=="Hello?")alert("Hi!")
+              else alert("Ben knocking on the door for a while.What took you so long?")
+            }
+          }
+        </script>
+    </body>
+</html>

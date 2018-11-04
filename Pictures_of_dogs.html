@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <body style='background-color:orange'>
+  <h1 style='color:purple'>Pictures and videos of dogs</h1>
+  <button onclick="randomvideo()"> Random picture or video </button>
+    <script>
+      function randomvideo(){
+        fetch ('https://api.thedogapi.com/v1/images/search', { headers: {'Content-Type': 'application/json', 'x-api-key' : 'd70bcd5e-1e7d-4471-8a5d-d670f93f6b72'}})
+	      .then(response => response.json())
+       .then(response => {
+  	  	let img = document.createElement("img")
+      	img.src= response[0].url
+	    	document.body.appendChild(img)})
+      }
+    </script>
+    </body>
+</html>

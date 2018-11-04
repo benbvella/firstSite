@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <body style='background-color:lightblue'>
+    <button onclick="window.location.href='Raft_Craft.html'">Play game</button>
+    <button onclick="PlayRaftCraftIntro()">Next Intro part</button>
+      <script>
+        let images = ["autodraw 9_18_2018 (1).png","autodraw 9_19_2018.png","autodraw 9_19_2018 (2).png","autodraw 9_19_2018 (3).png","autodraw 9_19_2018 (1).png","play_raft_craft_text.png"]
+        let img = document.createElement("img")
+        let imageIndex = 0
+        
+        function PlayRaftCraftIntro(){
+      	  img.src= images[imageIndex]
+      	  if (imageIndex === 0) {
+	    	    document.body.appendChild(img)
+      	  }
+      	  imageIndex++
+	    	}
+      </script>
+  </body>
+</html>
